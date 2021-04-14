@@ -1,5 +1,7 @@
 const inquirer = require("inquirer")
+const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
+const Manager = require("./lib/Manager")
 
 
 function newEmployee() {
@@ -48,7 +50,8 @@ function newEmployee() {
                     message: "What is the employee's github user name?"
                 }).then(response => {
                     //create engineer
-
+                    const engineer = new Engineer(answers.employee, answers.id, answers.emailaddress, response.github)
+                    console.log(engineer)
                 })
                 break;
             case "manager":
@@ -58,7 +61,8 @@ function newEmployee() {
                     message: "What is employee's manager's office number?"
                 }).then(response => {
                     //create manager
-
+                    const manager = new Manager(answers.employee, answers.id, answers.emailaddress, response.officenumber)
+                    console.log(manager)
                 })
                 break;
 
