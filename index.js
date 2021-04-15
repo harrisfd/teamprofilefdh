@@ -2,7 +2,7 @@ const inquirer = require("inquirer")
 const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 const Manager = require("./lib/Manager")
-
+const employees = []
 
 function newEmployee() {
     inquirer.prompt([
@@ -40,7 +40,8 @@ function newEmployee() {
                     message: "What school did employee go to?"
                 }).then(response => {
                     const intern = new Intern(answers.employee, answers.id, answers.emailaddress, response.school)
-                    console.log(intern)
+                    employees.push(intern)
+                    addnew()
                 })
                 break;
             case "engineer":
@@ -51,7 +52,8 @@ function newEmployee() {
                 }).then(response => {
                     //create engineer
                     const engineer = new Engineer(answers.employee, answers.id, answers.emailaddress, response.github)
-                    console.log(engineer)
+                    employees.push(engineer)
+                    addnew()
                 })
                 break;
             case "manager":
@@ -62,12 +64,28 @@ function newEmployee() {
                 }).then(response => {
                     //create manager
                     const manager = new Manager(answers.employee, answers.id, answers.emailaddress, response.officenumber)
-                    console.log(manager)
+                    employees.push(manager)
+                    addnew()
                 })
                 break;
 
             default:
                 break;
+        }
+    })
+}
+
+function addnew() {
+    inquirer.prompt({
+        type: "confirm",
+        name: "addnew",
+        message: "Do you want to add a new employee?"
+    }).then(response => {
+        if (response.addnew) {
+            newEmployee()
+        }
+        else {
+            console.log(employees)
         }
     })
 }
