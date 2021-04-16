@@ -3,6 +3,9 @@ const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 const Manager = require("./lib/Manager")
 const employees = []
+const generateHtml = require("./src/generate")
+const fs = require("fs")
+const path = require("path")
 
 function newEmployee() {
     inquirer.prompt([
@@ -85,7 +88,9 @@ function addnew() {
             newEmployee()
         }
         else {
-            console.log(employees)
+            const htmlstring = generateHtml(employees)
+            const destination = path.join(__dirname, "./dist/index.html")
+            fs.writeFileSync(destination, htmlstring)
         }
     })
 }
