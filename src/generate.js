@@ -13,6 +13,7 @@ function generateHtml(employees) {
     </head>
 <body>
     <h1>Meet The Team</h1>
+    <div class="background-color:beige"
     <div class="row">
     <div class="container" id="team">
     <div class="row">
@@ -31,7 +32,8 @@ function generateHtml(employees) {
         const element = employees[i];
         switch (element.role) {
             case "Intern":
-                html += `<div class="card text-dark bg-info mb-3" style="width: 18rem;">
+                // <div class="col-4"></div>
+                html += `<div class="card mx-auto text-dark bg-info mb-3" style="width: 18rem;">
 <h2>${element.name}</h2>
 <h3>${element.role}</h3>
 <img src="../Images/Intern.jpg" class="card-img-top" alt="...">
@@ -43,7 +45,8 @@ function generateHtml(employees) {
 </div>`
                 break;
             case "Manager":
-                html += `<div class="card text-dark bg-info mb-3" style="width: 18rem;">
+                // <div class="col-4"></div>
+                html += `<div class="card mx-auto text-dark bg-info mb-3" style="width: 18rem;">
                 <h2>${element.name}</h2>
                 <h3>${element.role}</h3>
                 <img src="../Images/Manager.jpg" class="card-img-top" alt="...">
@@ -55,7 +58,8 @@ function generateHtml(employees) {
                 </div>`
                 break;
             case "Engineer":
-                html += `<div class="card text-dark bg-info mb-3" style="width: 18rem;">
+                // <div class="col-4"></div>
+                html += `<div class="card mx-auto text-dark bg-info mb-3" style="width: 18rem;">
                 <h2>${element.name}</h2>
                 <h3>${element.role}</h3>
                 <img src="../Images/Engineer.jpg" class="card-img-top" alt="...">
