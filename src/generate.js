@@ -20,7 +20,7 @@ function generateHtml(employees) {
                 html += `<div class="card" style="width: 18rem;">
 <h2>${element.name}</h2>
 <h3>${element.role}</h3>
-<img src="..." class="card-img-top" alt="...">
+<img src="../Images/Intern.jpg" class="card-img-top" alt="...">
 <div class="card-body">
   <h5 class="card-title">${element.id}</h5>
   <h5 class="card-title">${element.school}</h5>
@@ -32,7 +32,7 @@ function generateHtml(employees) {
                 html += `<div class="card" style="width: 18rem;">
                 <h2>${element.name}</h2>
                 <h3>${element.role}</h3>
-                <img src="..." class="card-img-top" alt="...">
+                <img src="../Images/Manager.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">${element.id}</h5>
                   <h5 class="card-title">${element.officenumber}</h5>
@@ -44,7 +44,7 @@ function generateHtml(employees) {
                 html += `<div class="card" style="width: 18rem;">
                 <h2>${element.name}</h2>
                 <h3>${element.role}</h3>
-                <img src="..." class="card-img-top" alt="...">
+                <img src="../Images/Engineer.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">${element.id}</h5>
                   <h5 class="card-title">${element.github}</h5>
