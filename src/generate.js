@@ -13,8 +13,7 @@ function generateHtml(employees) {
     </head>
 <body>
     <h1>Meet The Team</h1>
-    <div class="background-color:beige"
-    <div class="row">
+       <div class="row">
     <div class="container" id="team">
     <div class="row">
         <div class="col-12 text-center bg-info my-5 py-5 display-4 text-Black">Team Profile Generator</div>
@@ -38,9 +37,9 @@ function generateHtml(employees) {
 <h3>${element.role}</h3>
 <img src="../Images/Intern.jpg" class="card-img-top" alt="...">
 <div class="card-body">
-  <h5 class="card-title">${element.id}</h5>
-  <h5 class="card-title">${element.school}</h5>
-  <h5 class="card-title">${element.email}</h5>  
+<h5>ID:<h5><h6 class="card-title">${element.id}</h6>
+<h5>School:<h5><h6 class="card-title">${element.school}</h6>
+<h5>Email:<h5><h6 class="card-title">${element.email}</h6>  
 </div>
 </div>`
                 break;
@@ -51,9 +50,9 @@ function generateHtml(employees) {
                 <h3>${element.role}</h3>
                 <img src="../Images/Manager.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">${element.id}</h5>
-                  <h5 class="card-title">${element.officenumber}</h5>
-                  <h5 class="card-title">${element.email}</h5>  
+                <h5>ID:<h5><h6 class="card-title">${element.id}</h6>
+                <h5>Office Number:<h5><h6 class="card-title">${element.officenumber}</h6>
+                  <h5>Email:<h5><h6 class="card-title">${element.email}</h6>  
                 </div>
                 </div>`
                 break;
@@ -64,9 +63,9 @@ function generateHtml(employees) {
                 <h3>${element.role}</h3>
                 <img src="../Images/Engineer.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">${element.id}</h5>
-                  <h5 class="card-title">${element.github}</h5>
-                  <h5 class="card-title">${element.email}</h5>  
+                <h5>ID:<h5> <h6 class="card-title">${element.id}</h6>
+                <h5>Github:<h5><h6 class="card-title">${element.github}</h6>
+                <h5>Email:<h5><h6 class="card-title">${element.email}</h6>  
                 </div>
                 </div>`
                 break;
