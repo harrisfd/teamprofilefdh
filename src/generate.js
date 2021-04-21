@@ -39,7 +39,7 @@ function generateHtml(employees) {
 <div class="card-body">
 <h5>ID:<h5><h6 class="card-title">${element.id}</h6>
 <h5>School:<h5><h6 class="card-title">${element.school}</h6>
-<h5>Email:<h5><h6 class="card-title">${element.email}</h6>  
+<h5>Email:<h5><h6 class="card-title"><a href="mailto:${element.email}">Send Email: </a>${element.email}</h6>  
 </div>
 </div>`
                 break;
@@ -52,7 +52,7 @@ function generateHtml(employees) {
                 <div class="card-body">
                 <h5>ID:<h5><h6 class="card-title">${element.id}</h6>
                 <h5>Office Number:<h5><h6 class="card-title">${element.officenumber}</h6>
-                  <h5>Email:<h5><h6 class="card-title">${element.email}</h6>  
+                  <h5>Email:<h5><h6 class="card-title"><a href="mailto:${element.email}">Send Email: </a>${element.email}</h6>  
                 </div>
                 </div>`
                 break;
@@ -64,8 +64,8 @@ function generateHtml(employees) {
                 <img src="../Images/Engineer.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5>ID:<h5> <h6 class="card-title">${element.id}</h6>
-                <h5>Github:<h5><h6 class="card-title">${element.github}</h6>
-                <h5>Email:<h5><h6 class="card-title">${element.email}</h6>  
+                <h5>Github:<h5><h6 class="card-title"> <a href="http://www.github.com/${element.github}">${element.github}</a></h6>
+                <h5>Email:<h5><h6 class="card-title"><a href="mailto:${element.email}">Send Email: </a>${element.email}</h6>  
                 </div>
                 </div>`
                 break;
