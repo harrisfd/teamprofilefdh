@@ -21,6 +21,7 @@ https://github.com/harrisfd/teamprofilefdh
 
 When a manager is prompted for their team member's information for the following interns and engineers, then an HTML file is generated displaying a nicely formatted team roster including email address, github username, and manager's phone number, which will open in a new tab. For managers, their information including office number will be displayed, interns will display school, and engineer will display their github name. 
 
+Demonstration Video: https://screencast-o-matic.com/watch/crf3qlVe6oM
 
 ## Roadmap
 
