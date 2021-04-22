@@ -5,7 +5,7 @@
 const Engineer = require("../lib/Engineer")
 
 
-test("getName returns employee name", () => {
+test("getGithub returns employee profile", () => {
     const sample = new Engineer("Felicia", "1234", "fharrisfoster@gmail.com", "harrisfd")
     expect(sample.getGithub()).toBe("harrisfd")
 })
